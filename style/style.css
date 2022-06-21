@@ -12,6 +12,10 @@ html {
   margin: 0;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 :root {
   --color-main: #272a31;
   --color-accent: #ec5242;
@@ -20,15 +24,17 @@ html {
   --color-dark-gray: #3e3e3e;
 }
 
+/* Nav Bar  */
+
 .header {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
 .navigation {
   display: flex;
   align-items: center;
   padding: 1rem 3rem;
-  max-width: 1440px;
+  max-width: 1240px;
   margin: auto;
 }
 
@@ -77,7 +83,6 @@ html {
 
 .nav-links {
   color: var(--color-medium-gray);
-  font-family: 'Lato', sans-serif;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -98,4 +103,83 @@ html {
 .ATF-Campaign:hover {
   background-color: var(--color-accent);
   color: #fff;
+}
+
+/* Heading  */
+
+.heading {
+  width: 100%;
+  height: fit-content;
+  background-image: url('/images/main_big.png');
+  background-repeat: repeat-x;
+  background-position: center center;
+  padding: 5rem 0;
+}
+
+.heading-holder {
+  margin: auto;
+  padding: 0 2rem;
+  max-width: 1240px;
+  border: 1px solid red;
+}
+
+.title_message {
+  color: var(--color-accent);
+  font-size: 1.8rem;
+}
+
+.heading-title {
+  max-width: 100rem;
+  font-size: 7rem;
+  font-weight: bolder;
+  background-image: url(/images/heading-text.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading-description {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 5px solid #fff;
+  background-color: #f7f7f7;
+  padding: 1.3rem;
+  max-width: 63rem;
+}
+
+.heading-date {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.heading-place {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    padding: 12rem 0;
+  }
+
+  .title_message {
+    font-size: 3rem;
+  }
+
+  .heading-title {
+    font-size: 12rem;
+  }
+
+  .heading-description {
+    font-size: 2rem;
+  }
+
+  .heading-date {
+    font-size: 3.6rem;
+  }
+
+  .heading-place {
+    font-size: 2.4rem;
+  }
+
 }
