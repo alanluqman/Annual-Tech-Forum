@@ -53,3 +53,11 @@ for (let i = 0; i < speakerList.length; i += 1) {
     </div>`;
   speakerHolder.appendChild(speaker);
 }
+// menu button collapsible
+const btn = document.querySelectorAll('.nav-links');
+btn.forEach((element) => {
+  element.addEventListener('click', () => {
+    const menu = document.querySelector('#collapsible_menu');
+    menu.classList.remove('show');
+  });
+});
