@@ -325,3 +325,24 @@ body {
     gap: 5rem;
   }
 }
+
+/* Sponsors */
+.sponsor {
+  width: 100%;
+  padding: 6rem 1rem;
+  background-color: var(--color-dark-gray);
+}
+
+.sponsor-holder {
+  max-width: 124rem;
+}
+
+.sponsor-title {
+  font-size: 2.4rem;
+  color: var(--color-medium-gray);
+}
+
+.sponsor-image {
+  max-width: 15rem;
+  margin: 2rem 3rem;
+}
