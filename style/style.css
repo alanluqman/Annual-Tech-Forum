@@ -346,3 +346,37 @@ body {
   max-width: 15rem;
   margin: 2rem 3rem;
 }
+
+/* footer */
+.footer {
+  width: 100%;
+  padding: 6rem 1rem;
+}
+
+.footer-holder {
+  max-width: 124rem;
+}
+
+.footer-logo {
+  max-width: 30rem;
+}
+
+.footer-title {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.footer-description {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-title {
+    text-align: left;
+  }
+
+  .footer-description {
+    text-align: left;
+  }
+}
