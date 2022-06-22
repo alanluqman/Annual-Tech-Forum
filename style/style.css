@@ -27,7 +27,9 @@ body {
 /* Nav Bar  */
 
 .header {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
 }
 
 .navigation {
@@ -105,6 +107,12 @@ body {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: #fff;
+  }
+}
+
 /* Heading  */
 
 .heading {
@@ -112,7 +120,7 @@ body {
   background-image: url('../images/main_big.png');
   background-repeat: repeat-x;
   background-position: center center;
-  padding: 5rem 0;
+  padding: 10rem 0 5rem;
 }
 
 .heading-holder {
