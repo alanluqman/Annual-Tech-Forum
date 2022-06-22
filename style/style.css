@@ -208,6 +208,12 @@ body {
   opacity: 1;
 }
 
+.gray-underline {
+  width: 4rem;
+  border: 0.1rem solid gray;
+  opacity: 1;
+}
+
 .programs-holder {
   margin: 3rem 0;
 }
@@ -257,5 +263,65 @@ body {
 
   .see-whole-program {
     font-size: 2rem;
+  }
+}
+
+/* Main Speakers  */
+.main-speakers {
+  width: 100%;
+  padding: 8rem 1rem;
+  border-bottom: 2px solid lightgray;
+}
+
+.main-speakers-holder {
+  padding: 0 1rem;
+  max-width: 124rem;
+}
+
+.featured-speakers-section-title {
+  color: var(--color-main);
+  font-size: 2.4rem;
+}
+
+.speakers-holder {
+  padding: 5.5rem 0 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.speaker-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.speaker-title {
+  color: var(--color-main);
+  font-size: 2.2rem;
+}
+
+.speaker-position {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+}
+
+.speaker-qoute {
+  font-size: 1.5rem;
+}
+
+.see-speakers {
+  color: var(--color-main);
+  font-size: 1.6rem;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-speakers-section-title {
+    font-size: 3rem;
+  }
+
+  .speakers-holder {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
   }
 }
