@@ -24,6 +24,18 @@ body {
   --color-dark-gray: #3e3e3e;
 }
 
+/* Social links */
+
+.social-links {
+  width: 100%;
+  background-color: var(--color-dark-gray);
+  padding: 1rem 1rem;
+}
+
+.social-links-holder {
+  max-width: 124rem;
+}
+
 /* Nav Bar  */
 
 .header {
