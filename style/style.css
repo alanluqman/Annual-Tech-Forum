@@ -257,6 +257,45 @@ body {
   max-width: 60rem;
 }
 
+/* about page : see past forum */
+
+.forum-holder {
+  max-width: 124rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.past-forum {
+  background-size: cover;
+  background-position: center center;
+}
+
+.forum {
+  background-color: rgba(236, 82, 66, 0.6);
+  padding: 5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.forum:hover {
+  background-color: rgba(121, 120, 120, 0.6);
+}
+
+.forum-2020 {
+  background-image: url('../images/atf-2020.webp');
+}
+
+.forum-2018 {
+  background-image: url('../images/forum-2018.webp');
+}
+
+@media screen and (min-width: 768px) {
+  .forum-holder {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* Main Program  */
 .main-program {
   width: 100%;
