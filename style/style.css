@@ -365,8 +365,18 @@ body {
 
 .see-whole-program {
   text-transform: uppercase;
+  background-color: var(--color-accent);
+  text-decoration: none;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 4px;
   font-size: 1.5rem;
   color: #fff;
+  transition: all 0.3s ease;
+}
+
+.see-whole-program:hover {
+  color: #000;
 }
 
 @media screen and (min-width: 768px) {
@@ -392,6 +402,17 @@ body {
 
   .see-whole-program {
     font-size: 2rem;
+  }
+
+  .see-whole-program {
+    background-color: transparent;
+    padding: 0;
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .see-whole-program:hover {
+    color: var(--color-accent);
   }
 }
 
