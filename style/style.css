@@ -123,6 +123,12 @@ body {
   padding: 10rem 0 5rem;
 }
 
+.about-heading {
+  background-image: url('../images/about_bg_01.png');
+  background-position: left;
+  background-color: #f7f7f8;
+}
+
 .heading-holder {
   margin: auto;
   padding: 0 2rem;
@@ -145,6 +151,15 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.about-heading-title {
+  max-width: none;
+  font-size: 5rem;
+  color: var(--color-accent);
+  background-image: none;
+  -webkit-text-fill-color: var(--color-accent);
+  text-align: center;
+}
+
 .heading-description {
   font-size: 1.5rem;
   font-weight: 500;
@@ -154,10 +169,20 @@ body {
   max-width: 63rem;
 }
 
+.about-heading-description {
+  background-color: #fff;
+}
+
 .heading-date {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-dark-gray);
+}
+
+.about-heading-message {
+  font-weight: 400;
+  max-width: 40rem;
+  text-align: center;
 }
 
 .heading-place {
@@ -165,9 +190,17 @@ body {
   color: var(--color-dark-gray);
 }
 
+.about-heading-email {
+  font-weight: 600;
+}
+
 @media screen and (min-width: 768px) {
   .heading {
     padding: 12rem 0;
+  }
+
+  .about-heading {
+    background-position: center center;
   }
 
   .title_message {
@@ -178,12 +211,23 @@ body {
     font-size: 12rem;
   }
 
+  .about-heading-title {
+    font-size: 8rem;
+  }
+
   .heading-description {
     font-size: 2rem;
   }
 
   .heading-date {
     font-size: 3.6rem;
+  }
+
+  .about-heading-message {
+    font-weight: 400;
+    font-size: 2rem;
+    max-width: 60rem;
+    text-align: center;
   }
 
   .heading-place {
