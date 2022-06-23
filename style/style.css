@@ -1,0 +1,524 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --color-main: #272a31;
+  --color-accent: #ec5242;
+  --color-gray: #d3d3d3;
+  --color-medium-gray: #8b8b8b;
+  --color-dark-gray: #3e3e3e;
+}
+
+/* Social links */
+
+.social-links {
+  width: 100%;
+  background-color: var(--color-dark-gray);
+  padding: 1rem 1rem;
+}
+
+.social-links-holder {
+  max-width: 124rem;
+}
+
+/* Nav Bar  */
+
+.header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+  max-width: 1240px;
+  margin: auto;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.menu {
+  cursor: pointer;
+  width: 3rem;
+  padding: 2rem 0;
+}
+
+.collapsible {
+  width: 100%;
+  padding: 4rem 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.mobile-nav {
+  margin-top: 3rem;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.close-btn {
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  list-style-type: none;
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  color: var(--color-medium-gray);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.active-page {
+  color: var(--color-accent);
+}
+
+.nav-item :hover {
+  color: var(--color-accent);
+}
+
+.ATF-Campaign {
+  padding: 1rem 2rem;
+  border: 4px solid var(--color-accent);
+}
+
+.ATF-Campaign:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: #fff;
+  }
+}
+
+/* Heading  */
+
+.heading {
+  width: 100%;
+  background-image: url('../images/main_big.png');
+  background-repeat: repeat-x;
+  background-position: center center;
+  padding: 10rem 0 5rem;
+}
+
+.about-heading {
+  background-image: url('../images/about_bg_01.png');
+  background-position: left;
+  background-color: #f7f7f8;
+}
+
+.heading-holder {
+  margin: auto;
+  padding: 0 2rem;
+  max-width: 1240px;
+}
+
+.title_message {
+  color: var(--color-accent);
+  font-size: 1.8rem;
+}
+
+.heading-title {
+  max-width: 100rem;
+  font-size: 7rem;
+  font-weight: bolder;
+  background-image: url(../images/heading-text.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-heading-title {
+  max-width: none;
+  font-size: 5rem;
+  color: var(--color-accent);
+  background-image: none;
+  -webkit-text-fill-color: var(--color-accent);
+  text-align: center;
+}
+
+.heading-description {
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: 5px solid #fff;
+  background-color: #f7f7f7;
+  padding: 1.3rem;
+  max-width: 63rem;
+}
+
+.about-heading-description {
+  background-color: #fff;
+}
+
+.heading-date {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-dark-gray);
+}
+
+.about-heading-message {
+  font-weight: 400;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.heading-place {
+  font-size: 1.5rem;
+  color: var(--color-dark-gray);
+}
+
+.about-heading-email {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    padding: 12rem 0;
+  }
+
+  .about-heading {
+    background-position: center center;
+  }
+
+  .title_message {
+    font-size: 3rem;
+  }
+
+  .heading-title {
+    font-size: 12rem;
+  }
+
+  .about-heading-title {
+    font-size: 8rem;
+  }
+
+  .heading-description {
+    font-size: 2rem;
+  }
+
+  .heading-date {
+    font-size: 3.6rem;
+  }
+
+  .about-heading-message {
+    font-weight: 400;
+    font-size: 2rem;
+    max-width: 60rem;
+    text-align: center;
+  }
+
+  .heading-place {
+    font-size: 2.4rem;
+  }
+}
+
+/* about page : image section */
+.image-section {
+  width: 100%;
+  padding: 6rem 2rem;
+  border-bottom: 2px solid var(--color-gray);
+}
+
+.image-holder {
+  max-width: 124rem;
+}
+
+.image-logo-holder {
+  padding: 3rem;
+  border: 1px solid var(--color-gray);
+  margin-top: 5rem;
+  max-width: 100rem;
+}
+
+.image-logo {
+  max-width: 60rem;
+}
+
+/* about page : see past forum */
+
+.forum-holder {
+  max-width: 124rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.past-forum {
+  background-size: cover;
+  background-position: center center;
+}
+
+.forum {
+  background-color: rgba(236, 82, 66, 0.6);
+  padding: 5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.forum:hover {
+  background-color: rgba(121, 120, 120, 0.6);
+}
+
+.forum-2020 {
+  background-image: url('../images/atf-2020.webp');
+}
+
+.forum-2018 {
+  background-image: url('../images/forum-2018.webp');
+}
+
+@media screen and (min-width: 768px) {
+  .forum-holder {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .forum {
+    padding: 10rem;
+  }
+}
+
+/* Main Program  */
+.main-program {
+  width: 100%;
+  padding: 6rem 1.5rem;
+  background-color: rgb(39, 42, 50);
+  background-image: url(../images/pattern_bg.png);
+  background-repeat: repeat;
+}
+
+.main-program-section-title {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.main-program-holder {
+  max-width: 124rem;
+  padding: 0 1rem;
+}
+
+.orange-underline {
+  width: 4rem;
+  border: 0.1rem solid var(--color-accent);
+  opacity: 1;
+}
+
+.gray-underline {
+  width: 4rem;
+  border: 0.1rem solid gray;
+  opacity: 1;
+}
+
+.programs-holder {
+  margin: 3rem 0;
+}
+
+.program {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.program-title {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+}
+
+.see-whole-program {
+  text-transform: uppercase;
+  background-color: var(--color-accent);
+  text-decoration: none;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.see-whole-program:hover {
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .programs-holder {
+    margin: 6rem 0;
+  }
+
+  .main-program-section-title {
+    font-size: 3rem;
+  }
+
+  .program {
+    padding: 2rem;
+  }
+
+  .program-title {
+    font-size: 2.4rem;
+  }
+
+  .program-description {
+    font-size: 1.4rem;
+  }
+
+  .see-whole-program {
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 0;
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .see-whole-program:hover {
+    color: var(--color-accent);
+  }
+}
+
+/* Main Speakers  */
+.main-speakers {
+  width: 100%;
+  padding: 8rem 1rem;
+  border-bottom: 2px solid lightgray;
+}
+
+.main-speakers-holder {
+  padding: 0 1rem;
+  max-width: 124rem;
+}
+
+.featured-speakers-section-title {
+  color: var(--color-main);
+  font-size: 2.4rem;
+}
+
+.speakers-holder {
+  padding: 5.5rem 0 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.speaker-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.speaker-title {
+  color: var(--color-main);
+  font-size: 2.2rem;
+}
+
+.speaker-position {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+}
+
+.speaker-qoute {
+  font-size: 1.5rem;
+}
+
+.see-speakers {
+  color: var(--color-main);
+  font-size: 1.6rem;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-speakers-section-title {
+    font-size: 3rem;
+  }
+
+  .speakers-holder {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}
+
+/* Sponsors */
+.sponsor {
+  width: 100%;
+  padding: 6rem 1rem;
+  background-color: var(--color-dark-gray);
+}
+
+.sponsor-holder {
+  max-width: 124rem;
+}
+
+.sponsor-title {
+  font-size: 2.4rem;
+  color: var(--color-medium-gray);
+}
+
+.sponsor-image {
+  max-width: 15rem;
+  margin: 2rem 3rem;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  padding: 6rem 1rem;
+}
+
+.footer-holder {
+  max-width: 124rem;
+}
+
+.footer-logo {
+  max-width: 30rem;
+}
+
+.footer-title {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.footer-description {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-title {
+    text-align: left;
+  }
+
+  .footer-description {
+    text-align: left;
+  }
+}
