@@ -358,11 +358,6 @@ body {
   color: var(--color-accent);
 }
 
-.program-description {
-  color: #fff;
-  font-size: 1.2rem;
-}
-
 .see-whole-program {
   text-transform: uppercase;
   background-color: var(--color-accent);
@@ -401,11 +396,8 @@ body {
   }
 
   .see-whole-program {
-    font-size: 2rem;
-  }
-
-  .see-whole-program {
     background-color: transparent;
+    font-size: 2rem;
     padding: 0;
     text-decoration: underline;
     color: #fff;
