@@ -294,6 +294,10 @@ body {
   .forum-holder {
     grid-template-columns: 1fr 1fr;
   }
+
+  .forum {
+    padding: 10rem;
+  }
 }
 
 /* Main Program  */
